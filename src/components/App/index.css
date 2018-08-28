@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'Menlo';
+  font-style: normal;
+  src: url('../../assets/fonts/Menlo-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Menlo-Bold';
+  font-style: bold;
+  font-weight: 400;
+  src: url('../../assets/fonts/Menlo-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Stolzl';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Stolzl-Reg.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl-Thin';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Stolzl-Thin.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl-Book';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Stolzl-Book.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl-Medium';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../../assets/fonts/Stolzl-Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Stolzl-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../../assets/fonts/Stolzl-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Superclarendon-Regular';
+  font-style: normal;
+  src: url('../../assets/fonts/Superclarendon-Regular.ttf') format('opentype');
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}

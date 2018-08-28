@@ -1,7 +1,5 @@
 import React from 'react';
 import glamorous from 'glamorous';
-import MdArrowBack from 'react-icons/lib/md/arrow-back';
-import FaFacebook from 'react-icons/lib/fa/facebook';
 import { white, black, brandRed, brandBlue, beige } from '../colors';
 
 export const SectionTitle = glamorous.h2({
@@ -110,12 +108,6 @@ const _BackButton = glamorous.div({
   boxShadow: '0 2px 4px 0 rgba(197, 197, 197, 0.5)'
 });
 
-export const BackButton = (props) => (
-  <_BackButton {...props}>
-    <MdArrowBack size={20}/>
-  </_BackButton>
-);
-
 const LargeButton = glamorous.button({
   height: '34px',
   borderRadius: '18px',
@@ -199,7 +191,3 @@ const BlueButton = glamorous.button({
     boxShadow: '1px 1px 3px 0px rgba(138,134,163,1)',
   }
 });
-
-export const FacebookButton = ({ children, ...props }) => (
-  <BlueButton {...props}><FaFacebook /> {' '} { children }</BlueButton>
-);

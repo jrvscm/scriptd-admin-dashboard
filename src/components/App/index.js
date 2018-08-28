@@ -5,11 +5,11 @@ import {
   Switch,
   Redirect
 } from 'react-router-dom';
-
 import Dashboard from '../Dashboard';
 import RouteListener from '../RouteListener';
 import withAuthentication from '../Session/withAuthentication';
 import * as routes from '../../constants/routes';
+import './index.css';
 
 const App = () => (
   <Router>

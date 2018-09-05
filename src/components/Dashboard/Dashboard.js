@@ -2,11 +2,15 @@ import React from 'react';
 import glamorous from 'glamorous';
 
 import TopBar from './TopBar';
+import TrendingStories from './containers/TrendingStories';
+import StoriesByGenre from './containers/StoriesByGenre';
 import { grey } from '../../colors';
 
 const Dashboard = () => (
 	<Container>
 		<TopBar />
+		<TrendingStories />
+		<StoriesByGenre />
 	</Container>
 )
 

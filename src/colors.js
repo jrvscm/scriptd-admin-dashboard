@@ -27,3 +27,4 @@ export const brandBlue = '#0f59e1';
 export const borderSelect = '#c44665';
 export const buttondis = '#9a9b9a';
 export const greyBorder = '#bdbdbd';
+export const greyBorder2 = '#d5d5d5';

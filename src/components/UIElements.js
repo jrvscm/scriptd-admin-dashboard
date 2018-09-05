@@ -31,6 +31,7 @@ export const ComingSoon = glamorous.div({
 
 export const Card = glamorous.div({
   width: '100%',
+  maxWidth: 350,
   height: '100%',
   borderRadius: '15px',
   boxShadow: '0 4px 4px 1px rgba(0, 0, 0, 0.07)',

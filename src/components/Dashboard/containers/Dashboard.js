@@ -1,15 +1,13 @@
+import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-import { firebaseConnect, populate } from 'react-redux-firebase';
+import { firebaseConnect, populate, getVal } from 'react-redux-firebase';
 import Dashboard from '../Dashboard';
 
-const mapStateToProps = (state) => ({
-
+const mapStateToProps = ({ firebase }) => ({
 });
-const mapDispatchToProps = {
-
-};
 export default compose(
-  firebaseConnect([]),
+  firebaseConnect([
+  ]),
   connect(mapStateToProps)
 )(Dashboard);

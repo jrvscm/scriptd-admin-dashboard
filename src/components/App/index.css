@@ -47,6 +47,13 @@
 }
 
 @font-face {
+  font-family: 'Stolzl-Reg';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../../assets/fonts/Stolzl-Reg.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'Superclarendon-Regular';
   font-style: normal;
   src: url('../../assets/fonts/Superclarendon-Regular.ttf') format('opentype');

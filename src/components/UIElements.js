@@ -71,7 +71,7 @@ export const Avatar = glamorous.img({
       dim = 47;
       break;
     case large:
-      dim = 82;
+      dim = 60;
       break;
     case huge:
     default:

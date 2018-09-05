@@ -19,10 +19,9 @@ const generateCover = id => {
 
 const Container = glamorous.div({
   position: `relative`,
-  transition: `all .2s ease-in-out`
-}, ({editMode}) => ({
-  marginTop: editMode === true ? 10 : 0
-}))
+  transition: `all .2s ease-in-out`,
+  cursor: `pointer`
+})
 
 const Cover = glamorous.div({
   height: '135px',
@@ -61,9 +60,9 @@ const Name = glamorous.p({
 });
 
 
-const SmallStoryCard = withRouter(({story, storyId,  author, authors}) => {
+const SmallStoryCard = withRouter(({story, storyId,  author, authors, history}) => {
   return(
-    <Container>
+    <Container onClick={() => history.push(`/story/${storyId}`)}>
       <Card>
         <Cover src={generateCover(storyId)} />
       </Card>

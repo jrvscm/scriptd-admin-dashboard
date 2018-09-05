@@ -1,2 +1,2 @@
 export const DASHBOARD = '/dashboard';
-export const SCRIPT_VIEW = '/script/:id';
+export const STORY_VIEW = '/story/:id';

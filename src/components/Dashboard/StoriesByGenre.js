@@ -52,7 +52,7 @@ class StoriesByGenre extends Component {
             if(stories[key].genres) {
               if(stories[key].genres[exists]){
                 return(
-                  <Container>
+                  <Container key={key}>
                     <SmallStoryCard 
                       key={key} 
                       storyId={key}

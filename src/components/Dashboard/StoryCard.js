@@ -36,7 +36,10 @@ class StoryCard extends Component {
     //const authorLink = story.author ? AUTHOR_PROFILE.replace(':id', story.author) : DISCOVER;
 
     return (
-      <Card>
+      <Card 
+        style={{cursor:`pointer`}} 
+        onClick={() => history.push(`/story/${story.id}`)}
+      >
         <Cover src={generateCover(story.id)} />
         <Content>
           <Title>{ story.title }</Title>

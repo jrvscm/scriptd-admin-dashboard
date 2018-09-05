@@ -27,16 +27,16 @@ class StoriesByGenre extends Component {
     const {stories, genreMetaData, scriptsByGenre, authors} = this.props;
     const { value } = this.state;
 
-    if (!isLoaded(genreMetaData, scriptsByGenre, stories, authors)) {
-      return null;
-    }
+  if (!isLoaded(genreMetaData, scriptsByGenre, stories, authors)) {
+    return null;
+  }
 
     const exists = value.toLowerCase().replace("-", "_");
 
   return(
 		<Col>
 			<Row>
-				<H2>Trending Stories</H2> 
+				<H2>Stories By Genre</H2> 
 				<Select value={value} onChange={(e) => this.updateGenre(e)}>
 					{
             Object.keys(genreMetaData.names).map(key => 
@@ -69,8 +69,7 @@ class StoriesByGenre extends Component {
         </HorizontalList>
 			</Div>
 		</Col>
-    )
-  }
+  )}
 }
 
 export default StoriesByGenre;

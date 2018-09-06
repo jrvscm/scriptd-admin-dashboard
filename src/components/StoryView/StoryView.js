@@ -4,6 +4,7 @@ import { isLoaded } from 'react-redux-firebase';
 
 import TopBar from '../TopBar';
 import StoryPreface from './StoryPreface';
+import StoryTrends from './StoryTrends';
 import { grey } from '../../colors';
 
 const StoryView = ({story, author, authors, allTags, storyTags}) => {
@@ -14,14 +15,19 @@ const StoryView = ({story, author, authors, allTags, storyTags}) => {
 	return (
 		<Container>
 			<TopBar title={'Story Detail Analytics'} />
-			<Row>
-				<StoryPreface 
-					story={story} 
-					author={author} 
-					authors={authors} 
-					allTags={allTags}
-					storyTags={storyTags}
-				/>
+			<Row style={{borderBottom: `1px solid #979797`}}>
+				<Col style={{borderRight: `1px solid #979797`}}>
+					<StoryPreface 
+						story={story} 
+						author={author} 
+						authors={authors} 
+						allTags={allTags}
+						storyTags={storyTags}
+					/>
+				</Col>
+				<Col>
+					<StoryTrends />
+				</Col>
 			</Row>
 		</Container>
 	)
@@ -46,4 +52,12 @@ const Row = glamorous.div({
 	flexDirection: `row`,
 	alignItems: `center`,
 	justifyContent: `flex-start`
+})
+
+const Col = glamorous.div({
+	width: `100%`,
+	display: `flex`,
+	flexDirection: `column`,
+	alignItems:`flex-start`,
+	justifyContent: `center`
 })
